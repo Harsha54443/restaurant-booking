@@ -6,5 +6,8 @@
 
 ## Build & Run
 ```bash
-mvn clean package
-java -jar target/restaurant-booking-1.0-SNAPSHOT-shaded.jar
+git clone https://github.com/Harsha54443/restaurant-booking.git
+cd restaurant-booking
+mvn clean compile exec:java \
+  -Dexec.mainClass="com.interview.Main" \
+  -Dexec.cleanupDaemonThreads=false
